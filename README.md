@@ -52,8 +52,18 @@ Check out comprehensive examples in [`examples`](./examples) folder.
 
 ## Features
 
-* [x] [GitHub repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)
-* [x] [GitHub repository rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
+* [x] [Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)
+* [ ] [Collaborators & Teams](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
+* [ ] [Branches](https://docs.github.com/en/pull-requests/reference/branches)
+* [x] [Rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
+* [ ] [Actions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
+* [ ] [Webhooks](https://docs.github.com/en/webhooks/about-webhooks)
+* [ ] [Environments](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments)
+* [ ] [Codespaces](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-development-environment-secrets-for-your-repository-or-organization)
+* [ ] [Dependabot](https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart)
+* [ ] [Deploy keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys)
+* [ ] [Autolink references](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources)
+* [ ] [Labels](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
 
 ## Contributing
 
