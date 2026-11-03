@@ -43,6 +43,10 @@ run "basic" {
 
         bypass_actors = [
           {
+            actor_type  = "OrganizationAdmin"
+            bypass_mode = "always"
+          },
+          {
             actor_id    = 5
             actor_type  = "RepositoryRole"
             bypass_mode = "pull_request"

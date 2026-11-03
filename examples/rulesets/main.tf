@@ -26,8 +26,7 @@ module "example" {
 
       bypass_actors = [
         {
-          actor_id    = 5
-          actor_type  = "RepositoryRole"
+          actor_type  = "OrganizationAdmin"
           bypass_mode = "always"
         },
       ]
@@ -60,7 +59,7 @@ module "example" {
     }
 
     "release-tags" = {
-      name   = "Release Tags"
+      name = "Release Tags"
 
       target = "tag"
 
