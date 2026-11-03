@@ -1,0 +1,6 @@
+[tools]
+fnox = "latest"
+prek = "latest"
+terraform = "1.7.0"
+terraform-docs = "latest"
+tflint = "latest"

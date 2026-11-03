@@ -1,0 +1,10 @@
+.terraform
+terraform.tfstate*
+.terraform.lock.hcl
+
+.env
+
+.claude
+CLAUDE.md
+
+fnox.local.toml
