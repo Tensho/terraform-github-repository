@@ -58,3 +58,54 @@ Check out comprehensive examples in [`examples`](./examples) folder.
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for development setup and testing instructions.
+
+<!-- BEGIN_TF_DOCS -->
+## Requirements
+
+| Name | Version |
+| ---- | ------- |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.7.0 |
+| <a name="requirement_github"></a> [github](#requirement\_github) | ~> 6.13 |
+
+## Providers
+
+| Name | Version |
+| ---- | ------- |
+| <a name="provider_github"></a> [github](#provider\_github) | ~> 6.13 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+| ---- | ---- |
+| [github_repository.default](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository) | resource |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+| ---- | ----------- | ---- | ------- | :------: |
+| <a name="input_allow_auto_merge"></a> [allow\_auto\_merge](#input\_allow\_auto\_merge) | Allow auto-merging pull requests. | `bool` | `null` | no |
+| <a name="input_allow_merge_commit"></a> [allow\_merge\_commit](#input\_allow\_merge\_commit) | Allow merge commits. | `bool` | `null` | no |
+| <a name="input_allow_rebase_merge"></a> [allow\_rebase\_merge](#input\_allow\_rebase\_merge) | Allow rebase merges. | `bool` | `null` | no |
+| <a name="input_allow_squash_merge"></a> [allow\_squash\_merge](#input\_allow\_squash\_merge) | Allow squash merges. | `bool` | `null` | no |
+| <a name="input_archive_on_destroy"></a> [archive\_on\_destroy](#input\_archive\_on\_destroy) | Archive the repository instead of deleting it on destroy. | `bool` | `true` | no |
+| <a name="input_delete_branch_on_merge"></a> [delete\_branch\_on\_merge](#input\_delete\_branch\_on\_merge) | Delete head branch after a pull request is merged. | `bool` | `null` | no |
+| <a name="input_description"></a> [description](#input\_description) | Repository description. | `string` | `null` | no |
+| <a name="input_has_issues"></a> [has\_issues](#input\_has\_issues) | Enable GitHub Issues. | `bool` | `null` | no |
+| <a name="input_has_projects"></a> [has\_projects](#input\_has\_projects) | Enable GitHub Projects. | `bool` | `null` | no |
+| <a name="input_has_wiki"></a> [has\_wiki](#input\_has\_wiki) | Enable GitHub Wiki. | `bool` | `null` | no |
+| <a name="input_name"></a> [name](#input\_name) | Repository name. | `string` | n/a | yes |
+| <a name="input_visibility"></a> [visibility](#input\_visibility) | Repository visibility: `public`, `private` or `internal`. | `string` | `"private"` | no |
+
+## Outputs
+
+| Name | Description |
+| ---- | ----------- |
+| <a name="output_full_name"></a> [full\_name](#output\_full\_name) | Repository full name (`owner/name`) |
+| <a name="output_name"></a> [name](#output\_name) | Repository name |
+| <a name="output_node_id"></a> [node\_id](#output\_node\_id) | Repository GraphQL node ID |
+| <a name="output_repo_id"></a> [repo\_id](#output\_repo\_id) | Repository ID |
+<!-- END_TF_DOCS -->

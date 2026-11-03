@@ -22,7 +22,9 @@ run "all_attributes" {
   variables {
     name        = "terraform-github-repository-test"
     description = "Terraform GitHub repository module test"
-    visibility  = "public"
+    # Keep visibility unchanged: GitHub applies visibility changes
+    # asynchronously, and teardown DELETE fails with 409 while one is running.
+    visibility = "private"
 
     has_issues   = true
     has_projects = true
@@ -38,11 +40,6 @@ run "all_attributes" {
   assert {
     condition     = github_repository.default.description == "Terraform GitHub repository module test"
     error_message = "Repository description has not been updated"
-  }
-
-  assert {
-    condition     = github_repository.default.visibility == "public"
-    error_message = "Repository visibility has not been updated"
   }
 
   assert {
