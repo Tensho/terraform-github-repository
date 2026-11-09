@@ -105,13 +105,18 @@ No modules.
 | <a name="input_allow_merge_commit"></a> [allow\_merge\_commit](#input\_allow\_merge\_commit) | Allow merge commits. | `bool` | `null` | no |
 | <a name="input_allow_rebase_merge"></a> [allow\_rebase\_merge](#input\_allow\_rebase\_merge) | Allow rebase merges. | `bool` | `null` | no |
 | <a name="input_allow_squash_merge"></a> [allow\_squash\_merge](#input\_allow\_squash\_merge) | Allow squash merges. | `bool` | `null` | no |
+| <a name="input_allow_update_branch"></a> [allow\_update\_branch](#input\_allow\_update\_branch) | Always suggest updating pull request branches. | `bool` | `null` | no |
 | <a name="input_archive_on_destroy"></a> [archive\_on\_destroy](#input\_archive\_on\_destroy) | Archive the repository instead of deleting it on destroy. | `bool` | `true` | no |
 | <a name="input_delete_branch_on_merge"></a> [delete\_branch\_on\_merge](#input\_delete\_branch\_on\_merge) | Delete head branch after a pull request is merged. | `bool` | `null` | no |
 | <a name="input_description"></a> [description](#input\_description) | Repository description. | `string` | `null` | no |
 | <a name="input_has_issues"></a> [has\_issues](#input\_has\_issues) | Enable GitHub Issues. | `bool` | `null` | no |
 | <a name="input_has_projects"></a> [has\_projects](#input\_has\_projects) | Enable GitHub Projects. | `bool` | `null` | no |
 | <a name="input_has_wiki"></a> [has\_wiki](#input\_has\_wiki) | Enable GitHub Wiki. | `bool` | `null` | no |
+| <a name="input_merge_commit_message"></a> [merge\_commit\_message](#input\_merge\_commit\_message) | Default merge commit message: `PR_BODY`, `PR_TITLE` or `BLANK`. | `string` | `null` | no |
+| <a name="input_merge_commit_title"></a> [merge\_commit\_title](#input\_merge\_commit\_title) | Default merge commit title: `PR_TITLE` or `MERGE_MESSAGE`. | `string` | `null` | no |
 | <a name="input_name"></a> [name](#input\_name) | Repository name. | `string` | n/a | yes |
+| <a name="input_squash_merge_commit_message"></a> [squash\_merge\_commit\_message](#input\_squash\_merge\_commit\_message) | Default squash merge commit message: `PR_BODY`, `COMMIT_MESSAGES` or `BLANK`. | `string` | `null` | no |
+| <a name="input_squash_merge_commit_title"></a> [squash\_merge\_commit\_title](#input\_squash\_merge\_commit\_title) | Default squash merge commit title: `PR_TITLE` or `COMMIT_OR_PR_TITLE`. | `string` | `null` | no |
 | <a name="input_visibility"></a> [visibility](#input\_visibility) | Repository visibility: `public`, `private` or `internal`. | `string` | `"private"` | no |
 
 ## Outputs
