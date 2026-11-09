@@ -57,9 +57,39 @@ variable "allow_auto_merge" {
   default     = null
 }
 
+variable "allow_update_branch" {
+  description = "Always suggest updating pull request branches."
+  type        = bool
+  default     = null
+}
+
 variable "delete_branch_on_merge" {
   description = "Delete head branch after a pull request is merged."
   type        = bool
+  default     = null
+}
+
+variable "merge_commit_title" {
+  description = "Default merge commit title: `PR_TITLE` or `MERGE_MESSAGE`."
+  type        = string
+  default     = null
+}
+
+variable "merge_commit_message" {
+  description = "Default merge commit message: `PR_BODY`, `PR_TITLE` or `BLANK`."
+  type        = string
+  default     = null
+}
+
+variable "squash_merge_commit_title" {
+  description = "Default squash merge commit title: `PR_TITLE` or `COMMIT_OR_PR_TITLE`."
+  type        = string
+  default     = null
+}
+
+variable "squash_merge_commit_message" {
+  description = "Default squash merge commit message: `PR_BODY`, `COMMIT_MESSAGES` or `BLANK`."
+  type        = string
   default     = null
 }
 
