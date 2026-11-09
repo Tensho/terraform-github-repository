@@ -9,14 +9,44 @@ variable "description" {
   default     = null
 }
 
+variable "homepage_url" {
+  description = "URL of a page describing the repository."
+  type        = string
+  default     = null
+}
+
+variable "topics" {
+  description = "Repository topics."
+  type        = set(string)
+  default     = null
+}
+
 variable "visibility" {
   description = "Repository visibility: `public`, `private` or `internal`."
   type        = string
   default     = "private"
 }
 
+variable "is_template" {
+  description = "Mark the repository as a template."
+  type        = bool
+  default     = null
+}
+
+variable "archived" {
+  description = "Archive the repository. Archived repositories are read-only."
+  type        = bool
+  default     = null
+}
+
 variable "has_issues" {
   description = "Enable GitHub Issues."
+  type        = bool
+  default     = null
+}
+
+variable "has_discussions" {
+  description = "Enable GitHub Discussions."
   type        = bool
   default     = null
 }
@@ -29,6 +59,12 @@ variable "has_projects" {
 
 variable "has_wiki" {
   description = "Enable GitHub Wiki."
+  type        = bool
+  default     = null
+}
+
+variable "allow_forking" {
+  description = "Allow private forking. Applies only to private and internal repositories."
   type        = bool
   default     = null
 }
@@ -91,6 +127,25 @@ variable "squash_merge_commit_message" {
   description = "Default squash merge commit message: `PR_BODY`, `COMMIT_MESSAGES` or `BLANK`."
   type        = string
   default     = null
+}
+
+variable "web_commit_signoff_required" {
+  description = "Require contributors to sign off on web-based commits."
+  type        = bool
+  default     = null
+}
+
+variable "security_and_analysis" {
+  description = "Security and analysis feature statuses: `enabled` or `disabled`. Omitted features keep their current status."
+  type = object({
+    advanced_security                     = optional(string)
+    code_security                         = optional(string)
+    secret_scanning                       = optional(string)
+    secret_scanning_ai_detection          = optional(string)
+    secret_scanning_non_provider_patterns = optional(string)
+    secret_scanning_push_protection       = optional(string)
+  })
+  default = null
 }
 
 variable "archive_on_destroy" {
