@@ -7,7 +7,7 @@ Terraform module to manage [GitHub](https://github.com) repository resources.
 ```hcl
 module "repository" {
   source  = "Tensho/repository/github"
-  version = "~> 1.1"
+  version = "~> 1.2"
 
   name        = "example"
   description = "Example repository managed by Terraform"
