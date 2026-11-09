@@ -102,22 +102,30 @@ No modules.
 | Name | Description | Type | Default | Required |
 | ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_allow_auto_merge"></a> [allow\_auto\_merge](#input\_allow\_auto\_merge) | Allow auto-merging pull requests. | `bool` | `null` | no |
+| <a name="input_allow_forking"></a> [allow\_forking](#input\_allow\_forking) | Allow private forking. Applies only to private and internal repositories. | `bool` | `null` | no |
 | <a name="input_allow_merge_commit"></a> [allow\_merge\_commit](#input\_allow\_merge\_commit) | Allow merge commits. | `bool` | `null` | no |
 | <a name="input_allow_rebase_merge"></a> [allow\_rebase\_merge](#input\_allow\_rebase\_merge) | Allow rebase merges. | `bool` | `null` | no |
 | <a name="input_allow_squash_merge"></a> [allow\_squash\_merge](#input\_allow\_squash\_merge) | Allow squash merges. | `bool` | `null` | no |
 | <a name="input_allow_update_branch"></a> [allow\_update\_branch](#input\_allow\_update\_branch) | Always suggest updating pull request branches. | `bool` | `null` | no |
 | <a name="input_archive_on_destroy"></a> [archive\_on\_destroy](#input\_archive\_on\_destroy) | Archive the repository instead of deleting it on destroy. | `bool` | `true` | no |
+| <a name="input_archived"></a> [archived](#input\_archived) | Archive the repository. Archived repositories are read-only. | `bool` | `null` | no |
 | <a name="input_delete_branch_on_merge"></a> [delete\_branch\_on\_merge](#input\_delete\_branch\_on\_merge) | Delete head branch after a pull request is merged. | `bool` | `null` | no |
 | <a name="input_description"></a> [description](#input\_description) | Repository description. | `string` | `null` | no |
+| <a name="input_has_discussions"></a> [has\_discussions](#input\_has\_discussions) | Enable GitHub Discussions. | `bool` | `null` | no |
 | <a name="input_has_issues"></a> [has\_issues](#input\_has\_issues) | Enable GitHub Issues. | `bool` | `null` | no |
 | <a name="input_has_projects"></a> [has\_projects](#input\_has\_projects) | Enable GitHub Projects. | `bool` | `null` | no |
 | <a name="input_has_wiki"></a> [has\_wiki](#input\_has\_wiki) | Enable GitHub Wiki. | `bool` | `null` | no |
+| <a name="input_homepage_url"></a> [homepage\_url](#input\_homepage\_url) | URL of a page describing the repository. | `string` | `null` | no |
+| <a name="input_is_template"></a> [is\_template](#input\_is\_template) | Mark the repository as a template. | `bool` | `null` | no |
 | <a name="input_merge_commit_message"></a> [merge\_commit\_message](#input\_merge\_commit\_message) | Default merge commit message: `PR_BODY`, `PR_TITLE` or `BLANK`. | `string` | `null` | no |
 | <a name="input_merge_commit_title"></a> [merge\_commit\_title](#input\_merge\_commit\_title) | Default merge commit title: `PR_TITLE` or `MERGE_MESSAGE`. | `string` | `null` | no |
 | <a name="input_name"></a> [name](#input\_name) | Repository name. | `string` | n/a | yes |
+| <a name="input_security_and_analysis"></a> [security\_and\_analysis](#input\_security\_and\_analysis) | Security and analysis feature statuses: `enabled` or `disabled`. Omitted features keep their current status. | <pre>object({<br/>    advanced_security                     = optional(string)<br/>    code_security                         = optional(string)<br/>    secret_scanning                       = optional(string)<br/>    secret_scanning_ai_detection          = optional(string)<br/>    secret_scanning_non_provider_patterns = optional(string)<br/>    secret_scanning_push_protection       = optional(string)<br/>  })</pre> | `null` | no |
 | <a name="input_squash_merge_commit_message"></a> [squash\_merge\_commit\_message](#input\_squash\_merge\_commit\_message) | Default squash merge commit message: `PR_BODY`, `COMMIT_MESSAGES` or `BLANK`. | `string` | `null` | no |
 | <a name="input_squash_merge_commit_title"></a> [squash\_merge\_commit\_title](#input\_squash\_merge\_commit\_title) | Default squash merge commit title: `PR_TITLE` or `COMMIT_OR_PR_TITLE`. | `string` | `null` | no |
+| <a name="input_topics"></a> [topics](#input\_topics) | Repository topics. | `set(string)` | `null` | no |
 | <a name="input_visibility"></a> [visibility](#input\_visibility) | Repository visibility: `public`, `private` or `internal`. | `string` | `"private"` | no |
+| <a name="input_web_commit_signoff_required"></a> [web\_commit\_signoff\_required](#input\_web\_commit\_signoff\_required) | Require contributors to sign off on web-based commits. | `bool` | `null` | no |
 
 ## Outputs
 
