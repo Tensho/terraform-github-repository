@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/Tensho/terraform-github-repository/compare/v1.2.0...v1.3.0) (2026-11-10)
+
+
+### Features
+
+* **actions:** manage settings and workflow permissions ([#5](https://github.com/Tensho/terraform-github-repository/issues/5)) ([57c9d76](https://github.com/Tensho/terraform-github-repository/commit/57c9d76582dfcaff5a183be3452ef7cbe7efb88c))
+
 ## [1.2.0](https://github.com/Tensho/terraform-github-repository/compare/v1.1.0...v1.2.0) (2026-11-09)
 
 
