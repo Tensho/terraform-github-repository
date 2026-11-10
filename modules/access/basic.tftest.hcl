@@ -11,7 +11,16 @@ run "setup_repository" {
 
 run "setup_team" {
   module {
-    source = "./tests/team"
+    source  = "Tensho/organisation/github//modules/teams"
+    version = "1.1.0"
+  }
+
+  variables {
+    teams = {
+      "access-test" = {
+        name = "terraform-github-repository-access-test"
+      }
+    }
   }
 }
 
@@ -31,7 +40,7 @@ run "all_attributes" {
     repository = run.setup_repository.name
 
     teams = {
-      (run.setup_team.slug) = "maintain"
+      (run.setup_team.team_slugs["access-test"]) = "maintain"
     }
 
     users = {
@@ -40,7 +49,7 @@ run "all_attributes" {
   }
 
   assert {
-    condition     = github_team_repository.default[run.setup_team.slug].permission == "maintain"
+    condition     = github_team_repository.default[run.setup_team.team_slugs["access-test"]].permission == "maintain"
     error_message = "Team access has not been granted"
   }
 
