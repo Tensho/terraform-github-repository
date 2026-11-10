@@ -29,6 +29,7 @@ Use a [fine-grained personal access token](https://github.com/settings/personal-
 
 * **Repository access**: All repositories (required to create new repositories)
 * **Repository permissions** → **Administration**: Read and write (create, delete, rulesets)
+* **Organization permissions** → **Members**: Read and write (test teams)
 
 ## Testing
 
