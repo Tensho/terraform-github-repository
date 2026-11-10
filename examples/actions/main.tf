@@ -24,7 +24,6 @@ module "example" {
     patterns_allowed     = ["googleapis/release-please-action@*"]
   }
 
-  # Let release-please open release pull requests.
   default_workflow_permissions     = "read"
   can_approve_pull_request_reviews = true
 }

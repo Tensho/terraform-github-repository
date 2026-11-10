@@ -9,7 +9,6 @@ variable "enabled" {
   default     = true
 }
 
-# Defaults match a new repository created in the UI.
 variable "allowed_actions" {
   description = "Actions allowed to run: `all`, `local_only` or `selected`."
   type        = string
