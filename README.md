@@ -57,7 +57,7 @@ Check out comprehensive examples in [`examples`](./examples) folder.
 > Organisation-scoped resources live in [terraform-github-organisation](https://github.com/Tensho/terraform-github-organisation).
 
 * [x] [Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)
-* [ ] [Collaborators & Teams](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
+* [x] [Collaborators & Teams](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
 * [ ] [Branches](https://docs.github.com/en/pull-requests/reference/branches)
 * [x] [Rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets)
 * [x] [Actions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository)
