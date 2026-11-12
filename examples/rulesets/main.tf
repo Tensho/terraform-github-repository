@@ -59,7 +59,7 @@ module "example" {
     }
 
     "release-tags" = {
-      name = "Release Tags"
+      name   = "Release Tags"
       target = "tag"
 
       conditions = {
