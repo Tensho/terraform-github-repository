@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/Tensho/terraform-github-repository/compare/v1.3.0...v1.4.0) (2026-11-12)
+
+
+### Features
+
+* **access:** manage team and user repository access ([#7](https://github.com/Tensho/terraform-github-repository/issues/7)) ([a7cfd3b](https://github.com/Tensho/terraform-github-repository/commit/a7cfd3b392952328ab9f719ae5f0d55430e3becb))
+
 ## [1.3.0](https://github.com/Tensho/terraform-github-repository/compare/v1.2.0...v1.3.0) (2026-11-10)
 
 
