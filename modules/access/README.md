@@ -1,6 +1,6 @@
 # Access
 
-Grants teams and users access to a repository.
+Manages team and user access to a repository.
 
 Access is additive: the module manages only listed teams and users and ignores the rest.
 

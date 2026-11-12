@@ -1,4 +1,4 @@
-run "setup" {
+run "setup_repository" {
   module {
     source = "../.."
   }
@@ -12,11 +12,11 @@ run "setup" {
 
 run "required_attributes" {
   variables {
-    repository = run.setup.name
+    repository = run.setup_repository.name
   }
 
   assert {
-    condition     = github_actions_repository_permissions.default.repository == run.setup.name
+    condition     = github_actions_repository_permissions.default.repository == run.setup_repository.name
     error_message = "Actions permissions have not been created"
   }
 
@@ -43,7 +43,7 @@ run "required_attributes" {
 
 run "all_attributes" {
   variables {
-    repository = run.setup.name
+    repository = run.setup_repository.name
 
     enabled              = true
     allowed_actions      = "selected"
@@ -55,7 +55,7 @@ run "all_attributes" {
       patterns_allowed     = ["hashicorp/setup-terraform@*"]
     }
 
-    default_workflow_permissions     = "read"
+    default_workflow_permissions     = "write"
     can_approve_pull_request_reviews = true
   }
 
@@ -75,7 +75,7 @@ run "all_attributes" {
   }
 
   assert {
-    condition     = github_workflow_repository_permissions.default.default_workflow_permissions == "read"
+    condition     = github_workflow_repository_permissions.default.default_workflow_permissions == "write"
     error_message = "Default workflow permissions have not been updated"
   }
 

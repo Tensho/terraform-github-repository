@@ -9,17 +9,33 @@ module "example_repository" {
   archive_on_destroy = false
 }
 
+module "example_teams" {
+  source  = "Tensho/organisation/github//modules/teams"
+  version = "~> 1.1"
+
+  teams = {
+    "maintainers" = {
+      name = "terraform-github-repository-access-example-maintainers"
+    }
+
+    "developers" = {
+      name = "terraform-github-repository-access-example-developers"
+    }
+  }
+}
+
 module "example" {
   source = "../../modules/access"
 
   repository = module.example_repository.name
 
   teams = {
-    "maintainers" = "maintain"
-    "developers"  = "push"
+    (module.example_teams.team_slugs["maintainers"]) = "maintain"
+    (module.example_teams.team_slugs["developers"])  = "push"
   }
 
+  # GitHub usernames can't contain underscores, so this placeholder never invites a real user.
   users = {
-    "octocat" = "triage"
+    "github_username" = "triage"
   }
 }

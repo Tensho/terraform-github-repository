@@ -1,4 +1,4 @@
-run "setup" {
+run "setup_repository" {
   module {
     source = "../.."
   }
@@ -10,9 +10,9 @@ run "setup" {
   }
 }
 
-run "basic" {
+run "required_attributes" {
   variables {
-    repository = run.setup.name
+    repository = run.setup_repository.name
 
     rulesets = {
       "required-attributes" = {
@@ -28,7 +28,20 @@ run "basic" {
           deletion = true
         }
       }
+    }
+  }
 
+  assert {
+    condition     = github_repository_ruleset.default["required-attributes"].ruleset_id > 0
+    error_message = "Ruleset 'required-attributes' has not been created"
+  }
+}
+
+run "all_attributes" {
+  variables {
+    repository = run.setup_repository.name
+
+    rulesets = {
       "all-attributes" = {
         name        = "All Attributes"
         target      = "branch"
@@ -87,11 +100,6 @@ run "basic" {
         }
       }
     }
-  }
-
-  assert {
-    condition     = github_repository_ruleset.default["required-attributes"].ruleset_id > 0
-    error_message = "Ruleset 'required-attributes' has not been created"
   }
 
   assert {

@@ -40,7 +40,19 @@ terraform init
 terraform test -verbose
 ```
 
-Run the sub-module test suite:
+Run a sub-module test suite:
+
+```shell
+cd modules/access
+terraform init
+terraform test -verbose
+```
+
+```shell
+cd modules/actions
+terraform init
+terraform test -verbose
+```
 
 ```shell
 cd modules/rulesets

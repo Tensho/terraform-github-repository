@@ -131,8 +131,8 @@ No modules.
 
 | Name | Description |
 | ---- | ----------- |
-| <a name="output_full_name"></a> [full\_name](#output\_full\_name) | Repository full name (`owner/name`) |
-| <a name="output_name"></a> [name](#output\_name) | Repository name |
-| <a name="output_node_id"></a> [node\_id](#output\_node\_id) | Repository GraphQL node ID |
-| <a name="output_repo_id"></a> [repo\_id](#output\_repo\_id) | Repository ID |
+| <a name="output_full_name"></a> [full\_name](#output\_full\_name) | Repository full name (`owner/name`). |
+| <a name="output_name"></a> [name](#output\_name) | Repository name. |
+| <a name="output_node_id"></a> [node\_id](#output\_node\_id) | Repository GraphQL node ID. |
+| <a name="output_repo_id"></a> [repo\_id](#output\_repo\_id) | Repository ID. |
 <!-- END_TF_DOCS -->

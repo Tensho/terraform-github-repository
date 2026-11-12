@@ -1,6 +1,6 @@
 # Rulesets
 
-Manages GitHub repository rulesets.
+Manages rulesets of a repository.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -37,5 +37,5 @@ No modules.
 
 | Name | Description |
 | ---- | ----------- |
-| <a name="output_ruleset_ids"></a> [ruleset\_ids](#output\_ruleset\_ids) | Ruleset IDs |
+| <a name="output_ruleset_ids"></a> [ruleset\_ids](#output\_ruleset\_ids) | Ruleset IDs. |
 <!-- END_TF_DOCS -->

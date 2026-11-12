@@ -60,7 +60,6 @@ module "example" {
 
     "release-tags" = {
       name = "Release Tags"
-
       target = "tag"
 
       conditions = {
