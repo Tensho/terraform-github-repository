@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/Tensho/terraform-github-repository/compare/v1.4.0...v1.5.0) (2026-11-17)
+
+
+### Features
+
+* **labels:** manage repository labels ([#9](https://github.com/Tensho/terraform-github-repository/issues/9)) ([8661592](https://github.com/Tensho/terraform-github-repository/commit/8661592f3c67811d6f7529d60dbd7b2042d45889))
+
 ## [1.4.0](https://github.com/Tensho/terraform-github-repository/compare/v1.3.0...v1.4.0) (2026-11-12)
 
 
