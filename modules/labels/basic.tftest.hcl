@@ -35,21 +35,11 @@ run "all_attributes" {
         color       = "0e8a16"
         description = "Terraform GitHub repository module test"
       }
-
-      "bug" = {
-        color       = "b60205"
-        description = "Something is broken"
-      }
     }
   }
 
   assert {
     condition     = github_issue_label.default["all-attributes"].description == "Terraform GitHub repository module test"
     error_message = "Label 'all-attributes' has not been created"
-  }
-
-  assert {
-    condition     = github_issue_label.default["bug"].color == "b60205"
-    error_message = "Default label 'bug' has not been updated"
   }
 }

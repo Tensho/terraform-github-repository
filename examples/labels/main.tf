@@ -15,13 +15,13 @@ module "example" {
   repository = module.example_repository.name
 
   labels = {
-    "bug" = {
-      color       = "d73a4a"
-      description = "Something isn't working"
+    "dependencies" = {
+      color       = "0366d6"
+      description = "Pull requests that update a dependency file"
     }
 
-    "dependencies" = {
-      color = "0366d6"
+    "terraform" = {
+      color = "7b42bc"
     }
   }
 }

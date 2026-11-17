@@ -2,7 +2,7 @@
 
 Manages issue and pull request labels of a repository.
 
-Labels are additive: the module manages only listed labels and ignores the rest, including the GitHub defaults. Listing an existing label, such as `bug`, adopts it.
+Labels are additive: the module manages only listed labels and ignores the rest, including the GitHub defaults. To manage an existing label, such as `bug`, import it first.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
