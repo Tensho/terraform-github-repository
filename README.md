@@ -67,7 +67,7 @@ Check out comprehensive examples in [`examples`](./examples) folder.
 * [ ] [Dependabot](https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/dependabot-quickstart)
 * [ ] [Deploy keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys)
 * [ ] [Autolink references](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources)
-* [ ] [Labels](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
+* [x] [Labels](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
 
 ## Contributing
 
