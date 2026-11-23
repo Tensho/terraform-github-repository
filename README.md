@@ -68,6 +68,7 @@ Check out comprehensive examples in [`examples`](./examples) folder.
 * [ ] [Deploy keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys)
 * [ ] [Autolink references](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/configuring-autolinks-to-reference-external-resources)
 * [x] [Labels](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
+* [x] [GitHub Apps](https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps)
 
 ## Contributing
 
