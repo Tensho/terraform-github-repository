@@ -32,7 +32,6 @@ jobs:
           - modules/actions
           - modules/access
           - modules/labels
-          - modules/apps
     steps:
       - uses: actions/checkout@v5
         with:
@@ -57,4 +56,3 @@ jobs:
         working-directory: ./${{ matrix.module }}
         env:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
-          TF_VAR_installation_id: ${{ vars.GH_APP_INSTALLATION_ID }}
