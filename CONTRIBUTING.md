@@ -32,6 +32,8 @@ Use a [fine-grained personal access token](https://github.com/settings/personal-
 * **Repository permissions** → **Issues**: Read and write (labels)
 * **Organization permissions** → **Members**: Read and write (test teams)
 
+The `apps` sub-module calls a GitHub API that serves user tokens only, so use a personal access token, not a GitHub App installation token.
+
 ## Testing
 
 Run the root module test suite:
@@ -53,6 +55,14 @@ terraform test -verbose
 cd modules/actions
 terraform init
 terraform test -verbose
+```
+
+The `apps` test suite needs the ID of a GitHub App installation in `GITHUB_OWNER` with "Only select repositories" access:
+
+```shell
+cd modules/apps
+terraform init
+terraform test -verbose -var installation_id=<REDACTED>
 ```
 
 ```shell
